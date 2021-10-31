@@ -1,32 +1,35 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-	// ndeklarasikna tipe data
+	// declares the variable to be used
+	// and sets its data type
 	int a;
 	int b;
 
-	// nyetak teks
+	// print a text
 	cout << "Teknik Informatika";
 
-	// kanggo baris baru
+	// "endl" to create a new line
 	cout << endl;
-	// bisane ora nganggo "\n" ?
+	// why not use "\n" ?
 
-	// ngisi variabel a
+	// fill value to variable a
 	a = 10;
-	// nyetak variabel a
+	// print the value of the variable a
 	cout << a << "\n\n";
 
-	// nyetak instruksi
+	// print instruction for user to input something
 	cout << "Inputna nilai b : ";
-	// kanggo maca inputan
+	// read whatever the users enters
 	cin >> b;
 
-	// nyetak isi variabel b
-	cout << "Hasil dari inputan b adalah : " << b;
+	// print the contents of the variable b
+	// according to what was entered by the user
+	cout << "Hasil dari inputan b adalah : " << b << "\n";
 
+	// prevent the program from exiting immediately
+	system("pause");
 	return 0;
 }
