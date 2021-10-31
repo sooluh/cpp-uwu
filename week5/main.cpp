@@ -15,6 +15,11 @@ int main()
 	cout << endl;
 	// why not use "\n" ?
 
+	// alternatively, you can use "\n" to shorten your code!
+	cout << "\n";
+	// "\n" must be written in string
+	// wrapped in double quotes (")
+
 	// fill value to variable a
 	a = 10;
 	// print the value of the variable a
