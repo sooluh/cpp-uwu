@@ -5,7 +5,7 @@ int main()
 {
 	// declares the variable to be used
 	// and sets its data type
-	int a, b;
+	float a, b;
 	float add, sub, mlp, div;
 
 	// show the program title banner
