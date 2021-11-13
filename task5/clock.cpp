@@ -35,7 +35,7 @@ int main()
 	string minute;
 	string second;
 
-	cout << "Masukkan jam dengan format hh:mm:ss : ";
+	cout << 'Masukkan jam dengan format hh:mm:ss : ';
 	cin >> waktu;
 
 	hour = explode(waktu, ':')[0];
@@ -73,9 +73,9 @@ int main()
 		}
 	}
 
-	cout << "Jam yang baru ";
-	cout << setw(2) << setfill('0') << jam.hh << ":";
-	cout << setw(2) << setfill('0') << jam.mm << ":";
+	cout << 'Jam yang baru ';
+	cout << setw(2) << setfill('0') << jam.hh << ':';
+	cout << setw(2) << setfill('0') << jam.mm << ':';
 	cout << setw(2) << setfill('0') << jam.ss;
 
 	return 0;
