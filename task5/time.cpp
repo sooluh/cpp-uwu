@@ -100,7 +100,7 @@ int main()
 	cout << "Jam yang baru ";
 
 	/**
-	 * a little explanation for lines 147, 150 and 153
+	 * a little explanation for lines 117, 120 and 123
 	 * 
 	 * "setw" function sets field width
 	 * or number of characters that are to be
