@@ -1,82 +1,126 @@
+/**
+ * iostream header is used
+ * to call cout and cin functions
+ * https://www.cplusplus.com/reference/iostream
+ */
 #include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <utility>
 
+/**
+ * iomanip header is used
+ * to call setw and setfill functions
+ * https://www.cplusplus.com/reference/iomanip/
+ */
+#include <iomanip>
+
+/**
+ * means we use namespace named std
+ * so as not to repeat writing "std::cout" and "std::cin"
+ * so we can simply write "cout" and "cin" only
+ */
 using namespace std;
 
-vector<string> explode(string const &s, char delim)
-{
-	vector<string> result;
-	istringstream iss(s);
-
-	for (string token; getline(iss, token, delim);)
-	{
-		result.push_back(move(token));
-	}
-
-	return result;
-}
-
+/**
+ * main function to be called at program startup
+ * after initialization of non-local object
+ * with static storage duration
+ */
 int main()
 {
-	struct Jam
+	// create our own data type
+	// combine & define data type for Time
+	struct Time
 	{
 		int hh;
 		int mm;
 		int ss;
 	};
-	Jam jam;
 
-	string waktu;
-	string hour;
-	string minute;
-	string second;
+	// declares variable to be used
+	// and sets its data type
+	Time time;
 
-	cout << 'Masukkan jam dengan format hh:mm:ss : ';
-	cin >> waktu;
+	// give instructions to enter hours
+	cout << "Masukkan jam (hh) : ";
+	// read input from user
+	// and enter it into a variable
+	cin >> time.hh;
 
-	hour = explode(waktu, ':')[0];
-	minute = explode(waktu, ':')[1];
-	second = explode(waktu, ':')[2];
+	// give instructions to enter minutes
+	cout << "Masukkan menit (mm) : ";
+	// read input from user
+	// and enter it into a variable
+	cin >> time.mm;
 
-	jam.hh = stoi(hour);
-	jam.mm = stoi(minute);
-	jam.ss = stoi(second);
+	// give instructions to enter seconds
+	cout << "Masukkan detik (ss) : ";
+	// read input from user
+	// and enter it into a variable
+	cin >> time.ss;
 
-	if (jam.ss + 1 < 60)
+	if (time.ss + 1 < 60)
 	{
-		jam.ss = jam.ss + 1;
+		// if seconds +1 result is less than 60
+		// then add 1 to seconds variable
+		time.ss = time.ss + 1;
 	}
 	else
 	{
-		jam.ss = 0;
+		// otherwise (meaning >= 60)
+		// then seconds are overwritten to 0
+		time.ss = 0;
 
-		if (jam.mm + 1 < 60)
+		if (time.mm + 1 < 60)
 		{
-			jam.mm = jam.mm + 1;
+			// if minutes +1 result is less than 60
+			// then add 1 to minutes variable
+			time.mm = time.mm + 1;
 		}
 		else
 		{
-			jam.mm = 0;
+			// otherwise (meaning >= 60)
+			// then minutes are overwritten to 0
+			time.mm = 0;
 
-			if (jam.hh + 1 < 24)
+			if (time.hh + 1 < 24)
 			{
-				jam.hh = jam.hh + 1;
+				// if hours +1 result is less than 24
+				// then add 1 to hours variable
+				time.hh = time.hh + 1;
 			}
 			else
 			{
-				jam.hh = 0;
+				// otherwise (meaning >= 24)
+				// then hours are overwritten to 0
+				time.hh = 0;
 			}
 		}
 	}
 
-	cout << 'Jam yang baru ';
-	cout << setw(2) << setfill('0') << jam.hh << ':';
-	cout << setw(2) << setfill('0') << jam.mm << ':';
-	cout << setw(2) << setfill('0') << jam.ss;
+	// show final result
+	cout << "Jam yang baru ";
+
+	/**
+	 * a little explanation for lines 147, 150 and 153
+	 * 
+	 * "setw" function sets field width
+	 * or number of characters that are to be
+	 * displayed before a particular field
+	 * 
+	 * "setfill" function is used
+	 * to fill stream with char
+	 * type c specified as a parameter
+	 * 
+	 * easy explanation,
+	 * only to add 0 in front of number
+	 * if value of variable is <= 9
+	 */
+	cout << setw(2) << setfill('0') << time.hh;
+	// separator
+	cout << ':';
+	cout << setw(2) << setfill('0') << time.mm;
+	// separator
+	cout << ':';
+	cout << setw(2) << setfill('0') << time.ss;
 
 	return 0;
 }
