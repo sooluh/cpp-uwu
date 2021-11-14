@@ -122,5 +122,7 @@ int main()
 	cout << ':';
 	cout << setw(2) << setfill('0') << time.ss;
 
+	// prevent the program from exiting immediately
+	system("pause");
 	return 0;
 }

@@ -38,5 +38,6 @@ int main()
 	cout << "Minutes : " << minutes << endl;
 	cout << "Seconds : " << seconds << endl;
 
+	system("pause");
 	return 0;
 }
