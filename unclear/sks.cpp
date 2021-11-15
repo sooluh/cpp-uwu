@@ -1,37 +1,55 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-	int sks;
-	float ips;
+	bool run = true;
+	bool failed = false;
+	int credits = 0;
+	float index;
 
-	cout << "Masukkan IPS Anda : ";
-	cin >> ips;
+	while (run)
+	{
+		if (failed == true)
+		{
+			cout << "Harap masukkan IPS antara 1.5 - 4\n";
+		}
 
-	if (ips >= 1.50 && ips <= 1.99)
-	{
-		sks = 14;
-	}
-	else if (ips >= 2.00 && ips <= 2.49)
-	{
-		sks = 18;
-	}
-	else if (ips >= 2.50 && ips <= 2.99)
-	{
-		sks = 20;
-	}
-	else if (ips >= 3.00 && ips <= 3.99)
-	{
-		sks = 22;
-	}
-	else if (ips == 4.00)
-	{
-		sks = 24;
-	}
+		cout << "Masukkan IPS Anda : ";
+		cin >> index;
 
-	cout << "SKS Maksimal : " << sks << " SKS";
+		if (index >= 1.50 && index <= 1.99)
+		{
+			credits = 14;
+		}
+		else if (index >= 2.00 && index <= 2.49)
+		{
+			credits = 18;
+		}
+		else if (index >= 2.50 && index <= 2.99)
+		{
+			credits = 20;
+		}
+		else if (index >= 3.00 && index <= 3.99)
+		{
+			credits = 22;
+		}
+		else if (index == 4.00)
+		{
+			credits = 24;
+		}
+
+		if (credits == 0)
+		{
+			run = true;
+			failed = true;
+		}
+		else
+		{
+			run = false;
+			cout << "SKS Maksimal Anda : " << credits << " SKS\n";
+		}
+	}
 
 	system("pause");
 	return 0;
