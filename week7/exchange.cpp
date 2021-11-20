@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-	int a, b, c;
+	int a, b, t;
 
 	a = 8;
 	b = 5;
@@ -11,9 +11,9 @@ int main()
 	cout << "A sebelum pertukaran : " << a << "\n";
 	cout << "B sebelum pertukaran : " << b << "\n";
 
-	c = a;
+	t = a;
 	a = b;
-	b = c;
+	b = t;
 
 	cout << "A sesudah pertukaran : " << a << "\n";
 	cout << "B sesudah pertukaran : " << b << "\n";
