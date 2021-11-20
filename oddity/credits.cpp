@@ -10,6 +10,8 @@ int main()
 
 	while (run)
 	{
+		run = false;
+
 		if (failed == true)
 		{
 			cout << "Harap masukkan IPS antara 1.5 - 4\n";
@@ -46,7 +48,6 @@ int main()
 		}
 		else
 		{
-			run = false;
 			cout << "SKS Maksimal Anda : " << credits << " SKS\n";
 		}
 	}
