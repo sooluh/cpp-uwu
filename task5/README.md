@@ -26,12 +26,13 @@
    waktu tersebut ke dalam hari, jam, menit, detik.
 
 6. Sebuah proyek dikerjakan selama x hari. Tulislah algoritma untuk mengkonversi
-   berapa tahun, berapa bulan, dan berapa hari proyek tersebut dikerjakan. Asumsikan:
-   1 tahun = 365 hari, 1 bulan = 30 hari. Keluaran (tahun, bulan, hari) ditampilkan ke layar.
+   berapa tahun, berapa bulan, dan berapa hari proyek tersebut dikerjakan.
+   Asumsikan: 1 tahun = 365 hari, 1 bulan = 30 hari. Keluaran (tahun, bulan,
+   hari) ditampilkan ke layar.
 
-7. Dibaca dua buah tanggal (dd:mm:yy). Tulislah algoritma untuk menghitung berapa
-   hari jarak kedua tanggal tersebut. Asumsikan: 1 tahun = 365 hari, 1 bulan = 30 hari.
-   Output (tahun, bulan, hari) ditampilkan ke layar.
+7. Dibaca dua buah tanggal (dd:mm:yy). Tulislah algoritma untuk menghitung
+   berapa hari jarak kedua tanggal tersebut. Asumsikan: 1 tahun = 365 hari,
+   1 bulan = 30 hari. Output (tahun, bulan, hari) ditampilkan ke layar.
 
 8. Buatlah algoritma dan program untuk membaca sebuah jam (hh:mm:ss), lalu
    menentukan jam berikutnya setelah penambahan satu detik. Misalnya
@@ -45,10 +46,17 @@
 ## Answers
 
 1. You can see the code [here](./money.cpp)
+
 2. You can see the code [here](./distance.cpp)
+
 3. You can see the code [here](./length.cpp)
+
 4. You can see the code [here](./ideal.cpp)
+
 5. You can see the code [here](./seconds.cpp)
+
 6. You can see the code [here](./days.cpp)
+
 7. You can see the code [here](./2days.cpp)
+
 8. You can see the code [here](./time.cpp)

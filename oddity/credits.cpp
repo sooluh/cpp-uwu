@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -10,14 +11,12 @@ int main()
 
 	while (run)
 	{
-		run = false;
-
 		if (failed == true)
 		{
-			cout << "Harap masukkan IPS antara 1.5 - 4\n";
+			cout << ">> Harap masukkan IPS antara 1.5 - 4!" << endl;
 		}
 
-		cout << "Masukkan IPS Anda : ";
+		cout << ">> Masukkan IPS kamu : ";
 		cin >> index;
 
 		if (index >= 1.50 && index <= 1.99)
@@ -43,12 +42,12 @@ int main()
 
 		if (credits == 0)
 		{
-			run = true;
 			failed = true;
 		}
 		else
 		{
-			cout << "SKS Maksimal Anda : " << credits << " SKS\n";
+			run = false;
+			cout << ">> SKS maksimal kamu : " << credits << " SKS" << endl;
 		}
 	}
 

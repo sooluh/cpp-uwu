@@ -9,16 +9,17 @@ int main()
 	float add, sub, mlp, div;
 
 	// show the program title banner
-	cout << "PERHITUNGAN ARITMETIKA DASAR\n";
-	cout << "============================\n";
+	cout << "======================================" << endl;
+	cout << "==== PERHITUNGAN ARITMETIKA DASAR ====" << endl;
+	cout << "======================================" << endl;
 
 	// provide instruction for entering value a
-	cout << "Masukkan Bilangan A : ";
+	cout << ">> Masukkan bilangan A : ";
 	// read input from user
 	cin >> a;
 
 	// provide instruction for entering value b
-	cout << "Masukkan Bilangan B : ";
+	cout << ">> Masukkan bilangan B : ";
 	// read input from user
 	cin >> b;
 
@@ -31,11 +32,14 @@ int main()
 	// calculate division
 	div = a / b;
 
+	// separator
+	cout << "======================================" << endl;
+
 	// print all the results!
-	cout << "Hasil dari penjumlahan : " << add << "\n";
-	cout << "Hasil dari pengurangan : " << sub << "\n";
-	cout << "Hasil dari perkalian : " << mlp << "\n";
-	cout << "Hasil dari pembagian : " << div << "\n";
+	cout << ">> Hasil dari penjumlahan : " << add << endl;
+	cout << ">> Hasil dari pengurangan : " << sub << endl;
+	cout << ">> Hasil dari perkalian : " << mlp << endl;
+	cout << ">> Hasil dari pembagian : " << div << endl;
 
 	// prevent the program from exiting immediately
 	system("pause");

@@ -28,15 +28,15 @@ int main()
 	string format = "hh:mm:ss";
 	char delimiter = ':';
 
-	cout << "Format : " << format << endl;
+	cout << ">> Format : " << format << endl;
 
 	hours = explode(format, delimiter)[0];
 	minutes = explode(format, delimiter)[1];
 	seconds = explode(format, delimiter)[2];
 
-	cout << "Hours : " << hours << endl;
-	cout << "Minutes : " << minutes << endl;
-	cout << "Seconds : " << seconds << endl;
+	cout << ">> Hours : " << hours << endl;
+	cout << ">> Minutes : " << minutes << endl;
+	cout << ">> Seconds : " << seconds << endl;
 
 	system("pause");
 	return 0;

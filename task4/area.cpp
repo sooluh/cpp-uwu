@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -8,16 +9,17 @@ int main()
 	float result, length, width;
 
 	// show the program title banner
-	cout << "PENGHITUNG LUAS PERSEGI PANJANG\n";
-	cout << "===============================\n";
+	cout << "=========================================" << endl;
+	cout << "==== PENGHITUNG LUAS PERSEGI PANJANG ====" << endl;
+	cout << "=========================================" << endl;
 
 	// provide instruction for entering length value
-	cout << "Masukkan Panjang : ";
+	cout << ">> Masukkan panjang : ";
 	// read input from user
 	cin >> length;
 
 	// provide instruction for entering width value
-	cout << "Masukkan Lebar : ";
+	cout << ">> Masukkan lebar : ";
 	// read input from user
 	cin >> width;
 
@@ -25,7 +27,7 @@ int main()
 	result = length * width;
 
 	// present calculation result
-	cout << "Luas Persegi Panjang : " << result << "\n";
+	cout << ">> Luas persegi panjang : " << result << endl;
 
 	// prevent the program from exiting immediately
 	system("pause");
