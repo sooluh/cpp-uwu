@@ -25,7 +25,7 @@ int main()
 
 		if (failed == true)
 		{
-			cout << "Harap masukkan inputan dengan benar\n";
+			cout << "Harap masukkan inputan dengan benar!\n";
 		}
 
 		cout << "Tanggal sebelumnya : ";
@@ -51,8 +51,10 @@ int main()
 
 		if (two > one)
 		{
+			cout << "\n";
+
 			total = two - one;
-			cout << total << " total hari\n";
+			cout << total << " total hari.\n";
 
 			day3.yy = total / YEAR;
 			total = total % YEAR;
@@ -62,7 +64,7 @@ int main()
 
 			cout << day3.yy << " tahun, ";
 			cout << day3.mm << " bulan, ";
-			cout << day3.dd << " hari\n";
+			cout << day3.dd << " hari.\n";
 		}
 		else
 		{
@@ -71,5 +73,6 @@ int main()
 		}
 	}
 
+	system("pause");
 	return 0;
 }
