@@ -14,13 +14,13 @@ int main()
 
 	typedef struct
 	{
-		long pembangunan;
-		long cicilan;
-		long kemahasiswaan;
+		long int pembangunan;
+		long int cicilan;
+		long int kemahasiswaan;
 	} Biaya;
 	Biaya biaya;
 
-	long total;
+	long int total;
 
 	cout << "TOTAL BIAYA MASUK KULIAH" << endl;
 	cout << "===========================" << endl;
