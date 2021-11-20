@@ -68,7 +68,6 @@ int main()
 		}
 		else
 		{
-			run = true;
 			failed = true;
 		}
 	}
