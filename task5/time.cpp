@@ -28,12 +28,12 @@ int main()
 {
 	// create our own data type
 	// combine & define data type for Time
-	struct Time
+	typedef struct
 	{
 		int hh;
 		int mm;
 		int ss;
-	};
+	} Time;
 
 	// declares variable to be used
 	// and sets its data type

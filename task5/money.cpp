@@ -18,8 +18,7 @@ int main()
 
 		if (failed == true)
 		{
-			cout << "Harap masukkan uang dengan kelipatan 25"
-				 << "\n";
+			cout << "Harap masukkan uang dengan kelipatan 25\n";
 		}
 
 		cout << "Masukkan jumlah uang : ";
@@ -29,10 +28,13 @@ int main()
 		{
 			thousands = money / THOUSAND;
 			money = money % THOUSAND;
+
 			hundreds = money / HUNDRED;
 			money = money % HUNDRED;
+
 			fifties = money / FIFTY;
 			money = money % FIFTY;
+
 			twenty5 = money / TWENTY5;
 
 			cout << "Pecahan 1000 : " << thousands << "\n";
