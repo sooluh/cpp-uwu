@@ -1,13 +1,15 @@
 #include <iostream>
+
 using namespace std;
+
+typedef struct
+{
+	float x;
+	float y;
+} Coordinate;
 
 int main()
 {
-	typedef struct
-	{
-		float x;
-		float y;
-	} Coordinate;
 	Coordinate p1, p2, p3;
 
 	cout << "Masukkan x1 : ";
@@ -26,8 +28,8 @@ int main()
 	p3.y = (p1.y + p2.y) / 2;
 
 	cout << "P3 (" << p3.x << ", " << p3.y << ")";
+	cout << endl;
 
-	cout << "\n";
 	system("pause");
 	return 0;
 }

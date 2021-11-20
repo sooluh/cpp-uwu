@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 int main()
@@ -21,8 +22,7 @@ int main()
 	net = salary + benefit - tax;
 
 	cout << "Gaji bersih " << name << " adalah " << net;
-	// new line :3
-	cout << "\n";
+	cout << endl;
 
 	system("pause");
 	return 0;

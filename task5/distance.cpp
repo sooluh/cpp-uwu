@@ -1,10 +1,12 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
 	const long int KM = 100000;
 	const long int M = 100;
+
 	long int km, m, cm;
 
 	cout << "Masukkan jarak (cm) : ";
@@ -17,8 +19,8 @@ int main()
 	cm = cm % M;
 
 	cout << km << " km, " << m << " m, " << cm << " cm.";
+	cout << endl;
 
-	cout << "\n";
 	system("pause");
 	return 0;
 }

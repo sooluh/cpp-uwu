@@ -19,6 +19,15 @@
  */
 using namespace std;
 
+// create our own data type
+// combine & define data type for Time
+typedef struct
+{
+	int hh;
+	int mm;
+	int ss;
+} Time;
+
 /**
  * main function to be called at program startup
  * after initialization of non-local object
@@ -26,15 +35,6 @@ using namespace std;
  */
 int main()
 {
-	// create our own data type
-	// combine & define data type for Time
-	typedef struct
-	{
-		int hh;
-		int mm;
-		int ss;
-	} Time;
-
 	// declares variable to be used
 	// and sets its data type
 	Time time;
@@ -121,6 +121,8 @@ int main()
 	// separator
 	cout << ':';
 	cout << setw(2) << setfill('0') << time.ss;
+	// new line
+	cout << endl;
 
 	// prevent the program from exiting immediately
 	system("pause");

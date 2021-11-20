@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -16,9 +17,9 @@ int main()
 	feet = (meters * 100) / FEET;
 	inches = (meters * 1000) / INCH;
 
-	cout << meters << " meter : " << yards << " yard\n";
-	cout << meters << " meter : " << feet << " kaki\n";
-	cout << meters << " meter : " << inches << " inchi\n";
+	cout << meters << " meter : " << yards << " yard." << endl;
+	cout << meters << " meter : " << feet << " kaki." << endl;
+	cout << meters << " meter : " << inches << " inchi." << endl;
 
 	system("pause");
 	return 0;

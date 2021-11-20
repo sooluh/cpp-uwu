@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -10,15 +11,14 @@ int main()
 
 	bool run = true;
 	bool failed = false;
+
 	long int money, thousands, hundreds, fifties, twenty5;
 
 	while (run)
 	{
-		run = false;
-
 		if (failed == true)
 		{
-			cout << "Harap masukkan uang dengan kelipatan 25\n";
+			cout << "Harap masukkan uang dengan kelipatan 25!" << endl;
 		}
 
 		cout << "Masukkan jumlah uang : ";
@@ -26,6 +26,8 @@ int main()
 
 		if (money % 25 == 0)
 		{
+			run = false;
+
 			thousands = money / THOUSAND;
 			money = money % THOUSAND;
 
@@ -37,14 +39,13 @@ int main()
 
 			twenty5 = money / TWENTY5;
 
-			cout << "Pecahan 1000 : " << thousands << "\n";
-			cout << "Pecahan 100 : " << hundreds << "\n";
-			cout << "Pecahan 50 : " << fifties << "\n";
-			cout << "Pecahan 25 : " << twenty5 << "\n";
+			cout << "Pecahan 1000 : " << thousands << endl;
+			cout << "Pecahan 100 : " << hundreds << endl;
+			cout << "Pecahan 50 : " << fifties << endl;
+			cout << "Pecahan 25 : " << twenty5 << endl;
 		}
 		else
 		{
-			run = true;
 			failed = true;
 		}
 	}

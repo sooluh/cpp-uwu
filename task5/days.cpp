@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -24,7 +25,7 @@ int main()
 	cout << years << " tahun, ";
 	cout << months << " bulan, ";
 	cout << weeks << " minggu, ";
-	cout << days << " hari\n";
+	cout << days << " hari." << endl;
 
 	return 0;
 }

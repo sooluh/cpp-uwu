@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -24,7 +25,7 @@ int main()
 	cout << days << " hari, ";
 	cout << hours << " jam, ";
 	cout << minutes << " menit, ";
-	cout << seconds << " detik\n";
+	cout << seconds << " detik." << endl;
 
 	system("pause");
 	return 0;

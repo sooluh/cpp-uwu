@@ -1,17 +1,18 @@
 #include <iostream>
+
 using namespace std;
+
+typedef struct
+{
+	int dd;
+	int mm;
+	int yy;
+} Date;
 
 int main()
 {
 	const int YEAR = 365;
 	const int MONTH = 30;
-
-	typedef struct
-	{
-		int dd;
-		int mm;
-		int yy;
-	} Date;
 
 	bool run = true;
 	bool failed = false;
@@ -21,11 +22,9 @@ int main()
 
 	while (run)
 	{
-		run = false;
-
 		if (failed == true)
 		{
-			cout << "Harap masukkan inputan dengan benar!\n";
+			cout << "Harap masukkan inputan dengan benar!" << endl;
 		}
 
 		cout << "Tanggal sebelumnya : ";
@@ -51,10 +50,11 @@ int main()
 
 		if (two > one)
 		{
-			cout << "\n";
+			run = false;
+			cout << endl;
 
 			total = two - one;
-			cout << total << " total hari.\n";
+			cout << total << " total hari." << endl;
 
 			day3.yy = total / YEAR;
 			total = total % YEAR;
@@ -64,7 +64,7 @@ int main()
 
 			cout << day3.yy << " tahun, ";
 			cout << day3.mm << " bulan, ";
-			cout << day3.dd << " hari.\n";
+			cout << day3.dd << " hari." << endl;
 		}
 		else
 		{

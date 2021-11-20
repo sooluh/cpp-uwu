@@ -1,15 +1,17 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
+
+typedef struct
+{
+	int hh;
+	int mm;
+	int ss;
+} Time;
 
 int main()
 {
-	typedef struct
-	{
-		int hh;
-		int mm;
-		int ss;
-	} Time;
 	Time time;
 
 	long int total;
@@ -29,7 +31,7 @@ int main()
 	cout << setw(2) << setfill('0') << time.mm;
 	cout << ':';
 	cout << setw(2) << setfill('0') << time.ss;
-	cout << "\n";
+	cout << endl;
 
 	system("pause");
 	return 0;

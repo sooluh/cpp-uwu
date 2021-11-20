@@ -1,16 +1,17 @@
 #include <iostream>
+
 using namespace std;
+
+typedef struct
+{
+	int hh;
+	int mm;
+	int ss;
+} Time;
 
 int main()
 {
-	typedef struct
-	{
-		int hh;
-		int mm;
-		int ss;
-	} Time;
 	Time time;
-
 	long int hours;
 	long int minutes;
 	long int total;
@@ -28,7 +29,7 @@ int main()
 	minutes = time.mm * 60;
 	total = hours + minutes + time.ss;
 
-	cout << "Total detik : " << total << "\n";
+	cout << "Total detik : " << total << endl;
 
 	system("pause");
 	return 0;
