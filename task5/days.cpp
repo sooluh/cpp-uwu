@@ -27,5 +27,6 @@ int main()
 	cout << weeks << " minggu, ";
 	cout << days << " hari." << endl;
 
+	system("pause");
 	return 0;
 }
