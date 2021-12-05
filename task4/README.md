@@ -12,5 +12,4 @@
 ## Answers
 
 1. You can see the code [here](./area.cpp)
-
 2. You can see the code [here](./arithmetic.cpp)

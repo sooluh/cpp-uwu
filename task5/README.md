@@ -1,4 +1,4 @@
-# Task 5
+# Task 5 and Task 6
 
 ## Questions
 
@@ -38,25 +38,18 @@
    menentukan jam berikutnya setelah penambahan satu detik. Misalnya
 
    | Jam Lama | Jam Lama + 1 Detik |
-   | -------- | ------------------ |
-   | 14:27:31 | 14:27:32           |
-   | 15:36:59 | 15:37:00           |
-   | 10:59:59 | 11:00:00           |
+   | :------: | :----------------: |
+   | 14:27:31 |      14:27:32      |
+   | 15:36:59 |      15:37:00      |
+   | 10:59:59 |      11:00:00      |
 
 ## Answers
 
 1. You can see the code [here](./money.cpp)
-
 2. You can see the code [here](./distance.cpp)
-
 3. You can see the code [here](./length.cpp)
-
 4. You can see the code [here](./ideal.cpp)
-
 5. You can see the code [here](./seconds.cpp)
-
 6. You can see the code [here](./days.cpp)
-
 7. You can see the code [here](./2days.cpp)
-
 8. You can see the code [here](./time.cpp)
