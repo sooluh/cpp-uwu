@@ -21,4 +21,4 @@ jobs:
 
       - name: Build 🚀
         run: |
-          bash ./scripts/build2exe.sh
+          bash ./script/build2exe.sh
