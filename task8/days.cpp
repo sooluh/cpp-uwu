@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
     int month, year, result;
-    bool leap = true;
+    bool leap = false;
 
-    cout << "Masukkan bulan : ";
+    cout << "Masukkan nomor bulan : ";
     cin >> month;
 
     cout << "Masukkan tahun : ";
@@ -33,17 +33,25 @@ int main()
         break;
 
     default:
-        result = 29;
+        result = 28;
 
-        if (month % 4 == 0 && (month % 100 != 0 || month % 400 == 0))
+        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
         {
-            leap = false;
-            result = 28;
+            leap = true;
+            result = 29;
         }
     }
 
     cout << "Jumlah hari pada bulan ini adalah " << result;
-    cout << "dan tahun ini " << (leap ? "adalah tahun kabisat" : "bukan tahun kabisat");
+    cout << " dan tahun ini ";
 
+    // the code below is called ternary operator
+    // short syntax which is exactly the same as if else
+    cout << (leap ? "adalah tahun kabisat" : "bukan tahun kabisat");
+    // format : (condition ? true result : false result)
+
+    cout << endl;
+
+    system("pause");
     return 0;
 }

@@ -6,10 +6,12 @@ using namespace std;
 int main()
 {
     system("CLS");
-    cout << "Hello" << flush; // flush forces the printing to the screen before it clears
+    // flush forces the printing to the screen before it clears
+    cout << "Hello" << flush;
 
     system("CLS");
     cout << "Good-Bye" << endl;
 
+    system("pause");
     return 0;
 }

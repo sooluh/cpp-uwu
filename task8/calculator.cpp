@@ -7,10 +7,10 @@ int main()
     char oper;
     float one, two;
 
-    cout << "Enter an operator (+, -, *, /) : ";
+    cout << "Masukkan operator (+, -, *, /) : ";
     cin >> oper;
 
-    cout << "Enter two numbers : " << endl;
+    cout << "Ketikkan 2 angka (pisahkan dengan Enter)" << endl;
     cin >> one >> two;
 
     switch (oper)
@@ -32,9 +32,12 @@ int main()
         break;
 
     default:
-        cout << "Error! The operator is not correct";
+        cout << "Operator tidak tersedia.";
         break;
     }
 
+    cout << endl;
+
+    system("pause");
     return 0;
 }

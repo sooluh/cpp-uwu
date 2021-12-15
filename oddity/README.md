@@ -13,4 +13,14 @@
 4. [Unite time](./unitetime.cpp)<br>
    Consolidates time into a valid time format.
 
-5. ...
+5. [CLS](./cls.cpp)<br>
+   Clear the terminal screen.
+
+6. [Reverse Array](./reverse.cpp)<br>
+   Print array in reverse order.
+
+7. [Count Words](./count.cpp)<br>
+   Count words in sentence.
+
+8. [To Lowercase](./strtolower.cpp)<br>
+   Convert string to lowercase, same as `strtolower()` function in PHP.
