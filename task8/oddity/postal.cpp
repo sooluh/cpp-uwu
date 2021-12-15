@@ -116,7 +116,7 @@ int main()
     }
 
     cout << "Kode pos kota " << city;
-    cout << "adalah " << code << endl;
+    cout << " adalah " << code << endl;
 
     system("pause");
     return 0;
