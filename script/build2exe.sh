@@ -2,11 +2,11 @@
 
 printf ">> Clean .exe file"
 
-for file in */*.exe; do
+for file in $(find ./ -name '*.exe'); do
 	rm -f $file
 done
 
-for file in */*.cpp; do
+for file in $(find ./ -name '*.cpp'); do
 	dir=$(dirname $file)
 	name=$(basename -- $file)
 	extension="${name##*.}"
