@@ -18,3 +18,5 @@ for file in $(find ./ -name '*.cpp'); do
 	g++ $file -o $output
 	printf "\n>> Successfully build : $output"
 done
+
+printf "\n"
