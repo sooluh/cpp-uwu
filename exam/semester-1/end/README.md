@@ -159,8 +159,8 @@ I have changed the code in the question (only the structure and neatness). The o
 
 3. Tulislah algoritma yang menampilkan bilangan bulat dari 20 sampai 78, tapi di setiap bilangan yang
    habis dibagi 3 tampilkan nama anda dan setiap yang habis dibagi 5 tampilkan nama kelas anda!
-4. Tulislah algoritma yang menampilkan bilangan bulat dari 20 sampai 78, tapi di setiap bilangan yang
-   habis dibagi 3 tampilkan nama anda dan setiap yang habis dibagi 5 tampilkan nama kelas anda!
+4. Tulislah algoritma pengulangan dengan C++ untuk mencetak seperti dibawah ini, dimisalkan
+   diinputkan N=3!
 
    <table>
    <tr>
