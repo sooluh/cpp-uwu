@@ -1,4 +1,4 @@
-# Midterm Exam 1
+# Mid-Semester Test
 
 ## Questions
 
@@ -136,4 +136,4 @@
    { ambil nilai dari variabel t = nilai dari variabel b }<br>
    write (a, b, c)
 
-10. You can see the code [here](./20211.cpp)
+10. You can see the code [here](./tuition.cpp)
