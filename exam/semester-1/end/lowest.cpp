@@ -13,12 +13,13 @@ int main()
         cout << "Masukkan nilai N: ";
         cin >> n;
 
+        // if "min" contains null (\0)
+        // or (n < min)
         if (min == '\0' || n < min)
         {
             min = n;
         }
     }
-
     cout << "Nilai terendah: " << min << endl;
 
     // stop here!

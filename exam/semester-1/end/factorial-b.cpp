@@ -13,6 +13,7 @@ int main()
 
     for (row = 0; row < n; row++)
     {
+        // on each row, display the entered number
         cout << n << " ";
 
         for (column = 0; column < n; column++)
@@ -21,6 +22,8 @@ int main()
 
             if (column == (n - 1))
             {
+                // if column (current) = inputted number - 1
+                // create a new line
                 cout << endl;
             }
         }

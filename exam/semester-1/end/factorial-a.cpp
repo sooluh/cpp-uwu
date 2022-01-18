@@ -19,6 +19,8 @@ int main()
 
             if (column == (n - 1))
             {
+                // if column (current) = inputted number - 1
+                // create a new line
                 cout << endl;
             }
         }
