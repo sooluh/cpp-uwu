@@ -50,7 +50,7 @@ I have changed the code in the question (only the structure and neatness). The o
       x = x - 1;
       z = z + 1;
    }
-   cout << "x: " << x << endl;
+   cout << "x : " << x << endl;
    cout << "z : " << z;
    ```
 
@@ -110,7 +110,7 @@ I have changed the code in the question (only the structure and neatness). The o
    cin >> a;
    switch (a) {
       case 3:
-         a = a+3;
+         a = a + 3;
          break;
 
       case 1:
