@@ -193,7 +193,7 @@ I have changed the code in the question (only the structure and neatness). The o
 
 1. Below is the answer!
    1. Error, karena pada baris ke-4 tidak terdapat titik koma, yang mengakibatkan compiler tidak dapat
-      melanjutkan proses kompilasi. Jika baris 14 terdapat titik koma dan tidak ditemukan error, maka
+      melanjutkan proses kompilasi. Jika baris 4 terdapat titik koma dan tidak ditemukan error, maka
       outputnya sebagai berikut:<br>
       6<br>
       10<br>
