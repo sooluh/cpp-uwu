@@ -41,7 +41,7 @@ int main()
     avg = average(total, size);
 
     cout << "Nilai minimum = " << min << endl;
-    cout << "Nilai rata-rata = " << avg;
+    cout << "Nilai rata-rata = " << avg << endl;
 
     return 0;
 }
