@@ -12,6 +12,5 @@ int main()
     system("CLS");
     cout << "Good-Bye" << endl;
 
-    system("pause");
     return 0;
 }

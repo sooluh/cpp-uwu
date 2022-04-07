@@ -30,6 +30,5 @@ int main()
 
     cout << "Banyaknya data bilangan genap: " << total << endl;
 
-    system("pause");
     return 0;
 }

@@ -24,6 +24,5 @@ int main()
 	cout << "Gaji bersih " << name << " adalah " << net;
 	cout << endl;
 
-	system("pause");
 	return 0;
 }

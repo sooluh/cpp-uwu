@@ -21,6 +21,5 @@ int main()
 
     cout << "Jumlah kata : " << count << endl;
 
-    system("pause");
     return 0;
 }

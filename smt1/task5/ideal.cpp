@@ -15,6 +15,5 @@ int main()
 	cout << "Berat badan ideal : " << ideal << " kg.";
 	cout << endl;
 
-	system("pause");
 	return 0;
 }

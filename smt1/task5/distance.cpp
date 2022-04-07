@@ -21,6 +21,5 @@ int main()
 	cout << km << " km, " << m << " m, " << cm << " cm.";
 	cout << endl;
 
-	system("pause");
 	return 0;
 }

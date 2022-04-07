@@ -27,6 +27,5 @@ int main()
 	cout << minutes << " menit, ";
 	cout << seconds << " detik." << endl;
 
-	system("pause");
 	return 0;
 }

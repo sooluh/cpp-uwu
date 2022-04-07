@@ -1,10 +1,11 @@
 #!/bin/bash
 
-printf ">> Clean .exe file"
+printf ">> Clean binary file"
 
-for file in $(find ./ -name '*.exe'); do
-	rm -f $file
-done
+find ./* -type f \
+	-exec sh \
+	-c "file -i '{}' | grep -q 'charset=binary'" \
+	\; -print | xargs rm -f
 
 for file in $(find ./ -name '*.cpp'); do
 	dir=$(dirname $file)
@@ -12,7 +13,7 @@ for file in $(find ./ -name '*.cpp'); do
 	extension="${name##*.}"
 	name="${name%.*}"
 
-	output="$dir/$name.exe"
+	output="$dir/$name"
 
 	printf "\n\n>> Currently building file : $file"
 	g++ $file -o $output

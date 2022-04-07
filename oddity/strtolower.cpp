@@ -40,6 +40,5 @@ int main()
     cout << "Original : " << wow << endl;
     cout << "Lowercase : " << lower << endl;
 
-    system("pause");
     return 0;
 }

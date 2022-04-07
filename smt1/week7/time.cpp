@@ -33,6 +33,5 @@ int main()
 	cout << setw(2) << setfill('0') << time.ss;
 	cout << endl;
 
-	system("pause");
 	return 0;
 }

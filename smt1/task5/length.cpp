@@ -21,6 +21,5 @@ int main()
 	cout << meters << " meter : " << feet << " kaki." << endl;
 	cout << meters << " meter : " << inches << " inchi." << endl;
 
-	system("pause");
 	return 0;
 }

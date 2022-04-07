@@ -36,6 +36,5 @@ int main()
 
     cout << "Jumlah karakter: " << total << endl;
 
-    system("pause");
     return 0;
 }

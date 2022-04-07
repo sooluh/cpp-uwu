@@ -30,6 +30,5 @@ int main()
 	cout << "P3 (" << p3.x << ", " << p3.y << ")";
 	cout << endl;
 
-	system("pause");
 	return 0;
 }

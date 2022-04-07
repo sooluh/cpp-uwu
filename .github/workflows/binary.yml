@@ -1,4 +1,4 @@
-name: Build to .exe
+name: Build binary file
 
 on:
   workflow_dispatch:
@@ -21,4 +21,4 @@ jobs:
 
       - name: Build 🚀
         run: |
-          bash ./script/build2exe.sh
+          bash ./script/build.sh

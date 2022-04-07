@@ -19,6 +19,5 @@ int main()
 	cout << "A sesudah pertukaran : " << a << endl;
 	cout << "B sesudah pertukaran : " << b << endl;
 
-	system("pause");
 	return 0;
 }

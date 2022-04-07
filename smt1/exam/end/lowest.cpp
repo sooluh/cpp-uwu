@@ -23,6 +23,5 @@ int main()
     cout << "Nilai terendah: " << min << endl;
 
     // stop here!
-    system("pause");
     return 0;
 }

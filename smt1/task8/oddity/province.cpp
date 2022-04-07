@@ -83,6 +83,5 @@ int main()
         cout << "Ibu kota tidak tersedia." << endl;
     }
 
-    system("pause");
     return 0;
 }

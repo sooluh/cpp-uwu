@@ -42,6 +42,5 @@ int main()
 	cout << ">> Hasil dari pembagian : " << div << endl;
 
 	// prevent the program from exiting immediately
-	system("pause");
 	return 0;
 }

@@ -36,6 +36,5 @@ int main()
 	cout << "Hasil dari inputan b adalah : " << b << "\n";
 
 	// prevent the program from exiting immediately
-	system("pause");
 	return 0;
 }

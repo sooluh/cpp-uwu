@@ -31,6 +31,5 @@ int main()
 
 	cout << "Total detik : " << total << endl;
 
-	system("pause");
 	return 0;
 }

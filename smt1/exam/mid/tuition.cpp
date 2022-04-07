@@ -57,6 +57,5 @@ int main()
 	cout << ">> Total biaya kuliah kamu sekitar : " << total << endl;
 	cout << "============================================" << endl;
 
-	system("pause");
 	return 0;
 }

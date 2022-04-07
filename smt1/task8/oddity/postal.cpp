@@ -111,13 +111,11 @@ int main()
         // return value 0
         // force the program to stop
         // and not continue the process below it
-        system("pause");
         return 0;
     }
 
     cout << "Kode pos kota " << city;
     cout << " adalah " << code << endl;
 
-    system("pause");
     return 0;
 }

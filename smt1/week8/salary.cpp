@@ -32,6 +32,5 @@ int main()
     cout << "Halo " << name << endl;
     cout << "Upah total kamu : " << total << endl;
 
-    system("pause");
     return 0;
 }

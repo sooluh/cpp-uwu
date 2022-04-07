@@ -27,6 +27,5 @@ int main()
     }
 
     // stop here!
-    system("pause");
     return 0;
 }

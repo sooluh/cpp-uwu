@@ -30,6 +30,5 @@ int main()
 	cout << ">> Luas persegi panjang : " << result << endl;
 
 	// prevent the program from exiting immediately
-	system("pause");
 	return 0;
 }

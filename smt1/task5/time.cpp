@@ -125,6 +125,5 @@ int main()
 	cout << endl;
 
 	// prevent the program from exiting immediately
-	system("pause");
 	return 0;
 }
