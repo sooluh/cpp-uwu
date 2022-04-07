@@ -29,6 +29,5 @@ int main()
 
     cout << "Kamu berhasil mendapatkan diskon sebesar Rp. " << discount << endl;
     cout << "Jadi, kamu cukup bayar Rp. " << pay << endl;
-
     return 0;
 }

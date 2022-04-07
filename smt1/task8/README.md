@@ -27,10 +27,10 @@
 ## Answers
 
 1. You can see the code [here](./obidient/postal.cpp)<br>
-   But, I made something of my own exploration, [see here](./oddity/postal.cpp).
+   But, I made something of my own exploration, [see here](./oddity/postal.cpp)
 
 2. You can see the code [here](./obidient/province.cpp)<br>
-   I also made something for this matter, [just look here](./oddity/province.cpp).
+   I also made something for this matter, [just look here](./oddity/province.cpp)
 
 3. You can see the code [here](./days.cpp)
 4. You can see the code [here](./calculator.cpp)

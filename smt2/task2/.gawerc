@@ -1,0 +1,16 @@
+{
+  "questions": [
+    [
+      "Buatlah program mencari nilai minimum pada 5 data yang diinput oleh user",
+      "Gunakan array dan fungsi"
+    ],
+    [
+      "Buatlah program mencari nilai rata-rata dan nilai minimum pada 5 data yang diinput oleh user",
+      "Gunakan array dan fungsi"
+    ]
+  ],
+  "answers": [
+    "./minimum.cpp",
+    "./minimum-with-avg.cpp"
+  ]
+}

@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int interface(int one, int two);
+int divide(int divisible, int divisor);
 
 int main()
 {
-    return interface(0, 0);
+    int result = divide(12, 3);
+    cout << "Hasil " << result << endl;
+
+    return 0;
 }
 
-int interface(int one, int two)
+int divide(int divisible, int divisor)
 {
-    return 0;
+    return divisible * divisor;
 }

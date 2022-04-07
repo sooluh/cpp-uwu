@@ -1,0 +1,10 @@
+{
+  "questions": [
+    "Buatlah program dengan menggunakan bahasa C++ untuk menghitung luas persegi panjang!",
+    "Buatlah program dengan menggunakan bahasa C++ untuk menghitung penjumlahan, pengurangan, perkalian dan pembagian dari inputan dua buah bilangan bulat!"
+  ],
+  "answers": [
+    "./area.cpp",
+    "./arithmetic.cpp"
+  ]
+}

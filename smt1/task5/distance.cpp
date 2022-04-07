@@ -19,7 +19,7 @@ int main()
 	cm = cm % M;
 
 	cout << km << " km, " << m << " m, " << cm << " cm.";
-	cout << endl;
 
+	cout << endl;
 	return 0;
 }

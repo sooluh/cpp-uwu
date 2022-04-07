@@ -29,6 +29,5 @@ int main()
     }
 
     cout << "Banyaknya data bilangan genap: " << total << endl;
-
     return 0;
 }

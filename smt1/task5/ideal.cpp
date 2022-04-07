@@ -13,7 +13,7 @@ int main()
 	ideal = before - (before * 0.1);
 
 	cout << "Berat badan ideal : " << ideal << " kg.";
-	cout << endl;
 
+	cout << endl;
 	return 0;
 }

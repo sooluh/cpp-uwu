@@ -67,6 +67,5 @@ int main()
 
     cout << "Hai " << name << endl;
     cout << "Upah/gaji yang Anda dapatkan adalah Rp. " << wage << endl;
-
     return 0;
 }

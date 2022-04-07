@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  exe:
+  bin:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -21,4 +21,4 @@ jobs:
 
       - name: Build 🚀
         run: |
-          bash ./script/build.sh
+          bash ./build.sh

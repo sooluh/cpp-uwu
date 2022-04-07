@@ -51,6 +51,5 @@ int main()
     // format : (condition ? true result : false result)
 
     cout << endl;
-
     return 0;
 }

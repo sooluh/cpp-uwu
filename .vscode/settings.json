@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    ".gawerc": "json"
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  }
+}

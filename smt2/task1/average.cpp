@@ -44,6 +44,5 @@ int main()
     } while (run == true);
 
     cout << "\nProgram selesai bye...\n";
-
     return 0;
 }

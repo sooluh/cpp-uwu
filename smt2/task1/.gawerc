@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "Buatlah program menghitung luas persegi panjang dengan menggunakan fungsi tanpa nilai balik",
+    [
+      "Buatlah program menghitung Rata-rata dari sejumlah elemen angka. Dengan ketentuan sebagai berikut:",
+      {
+        "ul": [
+          "Banyaknya elemen angka ditentukan oleh user",
+          "Gunakalah fungsi berparameter input",
+          "Setelah perhitungan rata-rata selesai dan hasil ditampilkan, program akan menanyakan apakah program akan diulang atau tidak ? [Y/N]. Bila jawaban user adalah \"y\" maka program akan mengulang dan user kembali menginput jumlah elemen. Bila jawaban user \"n\", maka program akan selesai"
+        ]
+      }
+    ]
+  ],
+  "answers": [
+    "./rectangle.cpp",
+    "./average.cpp"
+  ]
+}

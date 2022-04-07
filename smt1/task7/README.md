@@ -3,7 +3,7 @@
 ## Questions
 
 1. Tulislah algoritma dan buat program untuk menentukan diskon bagi pembeli
-   berdasarkan :
+   berdasarkan:
 
    | Total Pembelian | Diskon |
    | :-------------: | :----: |
@@ -17,7 +17,7 @@
    normal selama seminggu adalah 48 jam. Kelebihan jam kerja dianggap lembur dengan
    upah lembur adalah 3000/jam untuk semua golongan karyawan. Buatlah Algoritma yang
    membaca nama karyawan dan jumlah jam kerjanya selama seminggu, lalu menghitung
-   gaji mingguannya.
+   gaji mingguannya
 
    | Golongan | Upah Per Jam |
    | :------: | :----------: |

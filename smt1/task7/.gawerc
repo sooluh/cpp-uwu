@@ -1,0 +1,66 @@
+{
+  "questions": [
+    [
+      "Tulislah algoritma dan buat program untuk menentukan diskon bagi pembeli berdasarkan :",
+      {
+        "table": {
+          "headers": [
+            "Total Pembelian",
+            "Dikson"
+          ],
+          "rows": [
+            [
+              "> 100000",
+              "20%"
+            ],
+            [
+              "50000 - 100000",
+              "15%"
+            ],
+            [
+              "10000 - 50000",
+              "10%"
+            ],
+            [
+              "< 10000",
+              "0%"
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      "Misalkan karyawan PT. ABC dikelompokkan berdasarkan golongannya. Upah per jam tiap karyawan bergantung pada golongannya (Seperti pada tabel). Jumlah jam kerja yang normal selama seminggu adalah 48 jam. Kelebihan jam kerja dianggap lembur dengan upah lembur adalah 3000/jam untuk semua golongan karyawan. Buatlah Algoritma yang membaca nama karyawan dan jumlah jam kerjanya selama seminggu, lalu menghitung gaji mingguannya.",
+      {
+        "table": {
+          "headers": [
+            "Golongan",
+            "Upah Per Jam"
+          ],
+          "rows": [
+            [
+              "A",
+              "Rp 4000"
+            ],
+            [
+              "B",
+              "Rp 5000"
+            ],
+            [
+              "C",
+              "Rp 6000"
+            ],
+            [
+              "D",
+              "Rp 7500"
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "answers": [
+    "./discount.cpp",
+    "./reward.cpp"
+  ]
+}

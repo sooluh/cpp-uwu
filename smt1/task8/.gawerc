@@ -1,0 +1,52 @@
+{
+  "questions": [
+    [
+      "Seorang pengirim surat menuliskan nama kota pada amplop surat tetapi tidak mencantumkan kode posnya. Buatlah algoritma yang menerima masukan nama kota dan menuliskan kode pos kota tersebut ke layar. Kota-kota yang tersedia di dalam daftar hanya 5, yaitu:",
+      {
+        "table": {
+          "headers": [
+            "Nama Kota",
+            "",
+            "Kode Pos"
+          ],
+          "rows": [
+            [
+              "Padang",
+              ":",
+              "25000"
+            ],
+            [
+              "Bandung",
+              ":",
+              "40100"
+            ],
+            [
+              "Solo",
+              ":",
+              "51000"
+            ],
+            [
+              "Denpasar",
+              ":",
+              "72000"
+            ],
+            [
+              "Palu",
+              ":",
+              "92300"
+            ]
+          ]
+        }
+      }
+    ],
+    "Buatlah algoritma untuk menentukan nama Provinsi dari inputan ibukota Provinsinya di Indonesia!",
+    "Buatlah algoritma yang membaca nomor bulan dan tahun, lalu menentukan banyaknya jumlah hari dalam bulan tersebut (perhitungkan juga untuk penentuan tahun kabisatnya)!",
+    "Buatlah algoritma untuk mensimulasikan sebuah kalkulator sederhana untuk melakukan operasi aritmatika sebagai berikut: dibaca operand 1, operator, dan operand 2 dan tentukan hasil aritmatikanya"
+  ],
+  "answers": [
+    "./oddity/postal.cpp",
+    "./oddity/province.cpp",
+    "./days.cpp",
+    "./calculator.cpp"
+  ]
+}
