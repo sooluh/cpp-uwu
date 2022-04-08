@@ -1,0 +1,45 @@
+{
+  "name": "@sooluh/cpp-uwu",
+  "version": "0.0.1",
+  "description": "generator answer sheet for tasks here",
+  "main": "src/app.js",
+  "scripts": {
+    "prebuild": "del-cli \"./src/*.js\"",
+    "build": "tsc",
+    "postbuild": "minify-all-js ./src -m",
+    "start": "node ./src/app.js",
+    "dev": "ts-node ./src/app.ts",
+    "postinstall": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sooluh/cpp-uwu.git"
+  },
+  "author": {
+    "name": "Suluh Sulistiawan",
+    "url": "https://suluh.my.id",
+    "email": "suluh.webdevelopers@hotmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sooluh/cpp-uwu/issues"
+  },
+  "homepage": "https://github.com/sooluh/cpp-uwu#readme",
+  "devDependencies": {
+    "@types/commonmark": "^0.27.5",
+    "@types/json2md": "^1.5.1",
+    "@types/node": "^17.0.23",
+    "@types/pdfkit": "^0.12.4",
+    "del-cli": "^4.0.1",
+    "minify-all-js": "^0.1.9",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3",
+    "yarn": "^1.22.18"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "json2md": "^1.12.0",
+    "pdfkit-commonmark": "^1.1.3"
+  }
+}
