@@ -2,43 +2,42 @@
 #include <string>
 #include <cctype>
 #include <cstring>
-
 using namespace std;
 
 string strtolower(string const &value)
 {
-    // get string length
-    int length = value.length();
+  // get string length
+  int length = value.length();
 
-    // variable declaration
-    // charArr has size (length of string + 1)
-    char charArr[length + 1], ch;
-    string result;
+  // variable declaration
+  // charArr has size (length of string + 1)
+  char charArr[length + 1], ch;
+  string result;
 
-    // copy to charArr from value
-    // this is to convert string to char
-    strcpy(charArr, value.c_str());
+  // copy to charArr from value
+  // this is to convert string to char
+  strcpy(charArr, value.c_str());
 
-    // loop until it's longer than the string
-    for (int i = 0; i < strlen(charArr); i++)
-    {
-        // change char to lowercase
-        ch = tolower(value[i]);
-        // push back to result string
-        result.push_back(ch);
-    }
+  // loop until it's longer than the string
+  for (int i = 0; i < strlen(charArr); i++)
+  {
+    // change char to lowercase
+    ch = tolower(value[i]);
+    // push back to result string
+    result.push_back(ch);
+  }
 
-    // return the result
-    return result;
+  // return the result
+  return result;
 }
 
 int main()
 {
-    string wow = "kErEn BaNgEt";
-    string lower = strtolower(wow);
+  string wow = "kErEn BaNgEt";
+  string lower = strtolower(wow);
 
-    cout << "Original : " << wow << endl;
-    cout << "Lowercase : " << lower << endl;
+  cout << "Original : " << wow << endl;
+  cout << "Lowercase : " << lower << endl;
 
-    return 0;
+  return 0;
 }

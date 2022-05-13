@@ -1,54 +1,47 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-	const int THOUSAND = 1000;
-	const int HUNDRED = 100;
-	const int FIFTY = 50;
-	const int TWENTY5 = 25;
+  const int THOUSAND = 1000, HUNDRED = 100, FIFTY = 50, TWENTY5 = 25;
+  bool run = true, failed = false;
+  long int money, thousands, hundreds, fifties, twenty5;
 
-	bool run = true;
-	bool failed = false;
+  while (run)
+  {
+    if (failed == true)
+    {
+      cout << "Harap masukkan uang dengan kelipatan 25!" << endl;
+    }
 
-	long int money, thousands, hundreds, fifties, twenty5;
+    cout << "Masukkan jumlah uang : ";
+    cin >> money;
 
-	while (run)
-	{
-		if (failed == true)
-		{
-			cout << "Harap masukkan uang dengan kelipatan 25!" << endl;
-		}
+    if (money % 25 == 0)
+    {
+      run = false;
 
-		cout << "Masukkan jumlah uang : ";
-		cin >> money;
+      thousands = money / THOUSAND;
+      money = money % THOUSAND;
 
-		if (money % 25 == 0)
-		{
-			run = false;
+      hundreds = money / HUNDRED;
+      money = money % HUNDRED;
 
-			thousands = money / THOUSAND;
-			money = money % THOUSAND;
+      fifties = money / FIFTY;
+      money = money % FIFTY;
 
-			hundreds = money / HUNDRED;
-			money = money % HUNDRED;
+      twenty5 = money / TWENTY5;
 
-			fifties = money / FIFTY;
-			money = money % FIFTY;
+      cout << "Pecahan 1000 : " << thousands << endl;
+      cout << "Pecahan 100 : " << hundreds << endl;
+      cout << "Pecahan 50 : " << fifties << endl;
+      cout << "Pecahan 25 : " << twenty5 << endl;
+    }
+    else
+    {
+      failed = true;
+    }
+  }
 
-			twenty5 = money / TWENTY5;
-
-			cout << "Pecahan 1000 : " << thousands << endl;
-			cout << "Pecahan 100 : " << hundreds << endl;
-			cout << "Pecahan 50 : " << fifties << endl;
-			cout << "Pecahan 25 : " << twenty5 << endl;
-		}
-		else
-		{
-			failed = true;
-		}
-	}
-
-	return 0;
+  return 0;
 }

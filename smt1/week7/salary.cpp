@@ -1,28 +1,25 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int main()
 {
-	const float BENEFIT = 0.2;
-	const float TAX = 0.15;
+  const float BENEFIT = 0.2, TAX = 0.15;
+  string name;
+  long salary, benefit, tax, net;
 
-	string name;
-	long salary, benefit, tax, net;
+  cout << "Masukkan nama : ";
+  cin >> name;
 
-	cout << "Masukkan nama : ";
-	cin >> name;
+  cout << "Masukkin gaji pokok : ";
+  cin >> salary;
 
-	cout << "Masukkin gaji pokok : ";
-	cin >> salary;
+  benefit = BENEFIT * salary;
+  tax = TAX * (salary + benefit);
+  net = salary + benefit - tax;
 
-	benefit = BENEFIT * salary;
-	tax = TAX * (salary + benefit);
-	net = salary + benefit - tax;
+  cout << "Gaji bersih " << name << " adalah " << net;
+  cout << endl;
 
-	cout << "Gaji bersih " << name << " adalah " << net;
-	cout << endl;
-
-	return 0;
+  return 0;
 }

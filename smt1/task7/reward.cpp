@@ -3,69 +3,64 @@ using namespace std;
 
 int main()
 {
-    const int OVERTIME = 3000;
-    const int DWH = 48;
+  const int OVERTIME = 3000, DWH = 48;
+  bool run = true, failed = false;
+  char name[255], group;
+  int dwh;
+  float hourly, wage;
 
-    bool run = true;
-    bool failed = false;
+  cout << "Masukkan nama Anda : ";
+  cin >> name;
 
-    char name[255];
-    char group;
-    int dwh;
-    float hourly, wage;
+  cout << "Masukkan total jam kerja : ";
+  cin >> dwh;
 
-    cout << "Masukkan nama Anda : ";
-    cin >> name;
+  while (run)
+  {
+    run = false;
 
-    cout << "Masukkan total jam kerja : ";
-    cin >> dwh;
-
-    while (run)
+    if (failed == true)
     {
-        run = false;
-
-        if (failed == true)
-        {
-            cout << "Golongan yang Anda masukkan tidak valid!" << endl;
-        }
-
-        cout << "Masukkan golongan Anda : ";
-        cin >> group;
-
-        switch (group)
-        {
-        case 'A':
-            hourly = 4000;
-            break;
-
-        case 'B':
-            hourly = 5000;
-            break;
-
-        case 'C':
-            hourly = 6000;
-            break;
-
-        case 'D':
-            hourly = 7500;
-            break;
-
-        default:
-            failed = true;
-            run = true;
-        }
+      cout << "Golongan yang Anda masukkan tidak valid!" << endl;
     }
 
-    if (dwh <= DWH)
-    {
-        wage = dwh * hourly;
-    }
-    else
-    {
-        wage = (DWH * hourly) + (dwh - DWH) * OVERTIME;
-    }
+    cout << "Masukkan golongan Anda : ";
+    cin >> group;
 
-    cout << "Hai " << name << endl;
-    cout << "Upah/gaji yang Anda dapatkan adalah Rp. " << wage << endl;
-    return 0;
+    switch (group)
+    {
+    case 'A':
+      hourly = 4000;
+      break;
+
+    case 'B':
+      hourly = 5000;
+      break;
+
+    case 'C':
+      hourly = 6000;
+      break;
+
+    case 'D':
+      hourly = 7500;
+      break;
+
+    default:
+      failed = true;
+      run = true;
+    }
+  }
+
+  if (dwh <= DWH)
+  {
+    wage = dwh * hourly;
+  }
+  else
+  {
+    wage = (DWH * hourly) + (dwh - DWH) * OVERTIME;
+  }
+
+  cout << "Hai " << name << endl;
+  cout << "Upah/gaji yang Anda dapatkan adalah Rp. " << wage << endl;
+  return 0;
 }

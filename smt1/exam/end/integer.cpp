@@ -5,27 +5,27 @@ using namespace std;
 // "main" function on the answer sheet!
 int main()
 {
-    // DEKLARASI
-    int loop = 20;
-    // ALGORITMA
-    for (loop; loop <= 78; loop++)
+  // DEKLARASI
+  int loop = 20;
+  // ALGORITMA
+  for (loop; loop <= 78; loop++)
+  {
+    if (loop % 3 == 0)
     {
-        if (loop % 3 == 0)
-        {
-            // customize this code with your name!
-            cout << "Suluh Sulistiawan" << endl;
-        }
-        else if (loop % 5 == 0)
-        {
-            // adapt this code to your class!
-            cout << "Informatika Malam B" << endl;
-        }
-        else
-        {
-            cout << loop << endl;
-        }
+      // customize this code with your name!
+      cout << "Suluh Sulistiawan" << endl;
     }
+    else if (loop % 5 == 0)
+    {
+      // adapt this code to your class!
+      cout << "Informatika Malam B" << endl;
+    }
+    else
+    {
+      cout << loop << endl;
+    }
+  }
 
-    // stop here!
-    return 0;
+  // stop here!
+  return 0;
 }

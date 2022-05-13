@@ -3,34 +3,33 @@ using namespace std;
 
 int process(int size)
 {
-    int min = '\0';
-    int data[size];
-    cout << endl;
+  int min = '\0', data[size];
+  cout << endl;
 
-    for (int index = 0; index < size; index++)
+  for (int index = 0; index < size; index++)
+  {
+    cout << "input data A[" << index << "] = ";
+    cin >> data[index];
+
+    if (min > data[index] || min == '\0')
     {
-        cout << "input data A[" << index << "] = ";
-        cin >> data[index];
-
-        if (min > data[index] || min == '\0')
-        {
-            min = data[index];
-        }
+      min = data[index];
     }
+  }
 
-    cout << endl;
-    return min;
+  cout << endl;
+  return min;
 }
 
 int main()
 {
-    int size, result;
+  int size, result;
 
-    cout << "Masukkan jumlah elemen = ";
-    cin >> size;
+  cout << "Masukkan jumlah elemen = ";
+  cin >> size;
 
-    result = process(size);
-    cout << "Nilai minimum = " << result << endl;
+  result = process(size);
+  cout << "Nilai minimum = " << result << endl;
 
-    return 0;
+  return 0;
 }

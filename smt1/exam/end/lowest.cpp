@@ -5,23 +5,23 @@ using namespace std;
 // "main" function on the answer sheet!
 int main()
 {
-    // DEKLARASI
-    int n, min;
-    // ALGORITMA
-    while (n != 999)
+  // DEKLARASI
+  int n, min;
+  // ALGORITMA
+  while (n != 999)
+  {
+    cout << "Masukkan nilai N: ";
+    cin >> n;
+
+    // if "min" contains null (\0)
+    // or (n < min)
+    if (min == '\0' || n < min)
     {
-        cout << "Masukkan nilai N: ";
-        cin >> n;
-
-        // if "min" contains null (\0)
-        // or (n < min)
-        if (min == '\0' || n < min)
-        {
-            min = n;
-        }
+      min = n;
     }
-    cout << "Nilai terendah: " << min << endl;
+  }
+  cout << "Nilai terendah: " << min << endl;
 
-    // stop here!
-    return 0;
+  // stop here!
+  return 0;
 }

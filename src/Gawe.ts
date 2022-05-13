@@ -1,4 +1,1 @@
-class Gawe {
-}
-
-export default Gawe
+class Gawe{hello(){console.log("world")}}export default Gawe;

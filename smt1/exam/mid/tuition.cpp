@@ -1,61 +1,57 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 typedef struct
 {
-	int nim;
-	string nama;
-	string prodi;
+  int number;
+  string name, major;
 } Mahasiswa;
 
 typedef struct
 {
-	long int pembangunan;
-	long int cicilan;
-	long int kemahasiswaan;
+  long int dev, installment, student;
 } Biaya;
 
 int main()
 {
-	Mahasiswa mahasiswa;
-	Biaya biaya;
-	long int total;
+  Mahasiswa colleger;
+  Biaya cost;
+  long int total;
 
-	cout << "============================================" << endl;
-	cout << "========= TOTAL BIAYA MASUK KULIAH =========" << endl;
-	cout << "============================================" << endl;
-	cout << ">> Nama  : Suluh Sulistiawan" << endl;
-	cout << ">> Kelas : IF Malam B" << endl;
-	cout << "============================================" << endl;
+  cout << "============================================" << endl;
+  cout << "========= TOTAL BIAYA MASUK KULIAH =========" << endl;
+  cout << "============================================" << endl;
+  cout << ">> Nama  : Suluh Sulistiawan" << endl;
+  cout << ">> Kelas : IF Malam B" << endl;
+  cout << "============================================" << endl;
 
-	cout << ">> Masukkan NIM kamu : ";
-	cin >> mahasiswa.nim;
+  cout << ">> Masukkan NIM kamu : ";
+  cin >> colleger.number;
 
-	cout << ">> Masukkan Nama kamu : ";
-	cin >> mahasiswa.nama;
+  cout << ">> Masukkan Nama kamu : ";
+  cin >> colleger.name;
 
-	cout << ">> Masukkan Prodi kamu : ";
-	cin >> mahasiswa.prodi;
+  cout << ">> Masukkan Prodi kamu : ";
+  cin >> colleger.major;
 
-	cout << "============================================" << endl;
+  cout << "============================================" << endl;
 
-	cout << ">> Uang Pembangunan : ";
-	cin >> biaya.pembangunan;
+  cout << ">> Uang Pembangunan : ";
+  cin >> cost.dev;
 
-	cout << ">> Cicilan Pertama : ";
-	cin >> biaya.cicilan;
+  cout << ">> Cicilan Pertama : ";
+  cin >> cost.installment;
 
-	cout << ">> Uang Kemahasiswaan : ";
-	cin >> biaya.kemahasiswaan;
+  cout << ">> Uang Kemahasiswaan : ";
+  cin >> cost.student;
 
-	total = biaya.pembangunan + biaya.cicilan + biaya.kemahasiswaan;
+  total = cost.dev + cost.installment + cost.student;
 
-	cout << "============================================" << endl;
-	cout << ">> Halo " << mahasiswa.nama << " dengan NIM " << mahasiswa.nim << endl;
-	cout << ">> Total biaya kuliah kamu sekitar : " << total << endl;
-	cout << "============================================" << endl;
+  cout << "============================================" << endl;
+  cout << ">> Halo " << colleger.name << " dengan NIM " << colleger.number << endl;
+  cout << ">> Total biaya kuliah kamu sekitar : " << total << endl;
+  cout << "============================================" << endl;
 
-	return 0;
+  return 0;
 }

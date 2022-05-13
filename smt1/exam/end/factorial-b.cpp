@@ -5,30 +5,30 @@ using namespace std;
 // "main" function on the answer sheet!
 int main()
 {
-    // DEKLARASI
-    int n, row, column;
-    // ALGORITMA
-    cout << "Masukkan nilai N: ";
-    cin >> n;
+  // DEKLARASI
+  int n, row, column;
+  // ALGORITMA
+  cout << "Masukkan nilai N: ";
+  cin >> n;
 
-    for (row = 0; row < n; row++)
+  for (row = 0; row < n; row++)
+  {
+    // on each row, display the entered number
+    cout << n << " ";
+
+    for (column = 0; column < n; column++)
     {
-        // on each row, display the entered number
-        cout << n << " ";
+      cout << "# ";
 
-        for (column = 0; column < n; column++)
-        {
-            cout << "# ";
-
-            if (column == (n - 1))
-            {
-                // if column (current) = inputted number - 1
-                // create a new line
-                cout << endl;
-            }
-        }
+      if (column == (n - 1))
+      {
+        // if column (current) = inputted number - 1
+        // create a new line
+        cout << endl;
+      }
     }
+  }
 
-    // stop here!
-    return 0;
+  // stop here!
+  return 0;
 }

@@ -2,7 +2,11 @@
 !/**/
 !*.*
 
+!LICENSE
 !task6
 
 node_modules/
 *.js
+
+!minify.js
+!*.config.*
