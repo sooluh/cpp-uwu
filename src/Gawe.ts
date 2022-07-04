@@ -1,1 +1,7 @@
-class Gawe{hello(){console.log("world")}}export default Gawe;
+class Gawe {
+  constructor() {
+    //
+  }
+}
+
+export default Gawe

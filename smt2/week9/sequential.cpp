@@ -15,26 +15,26 @@ int main()
   bool found;
 
   // algorithm
-  cout << "Badhe nginput pinten elemen array? : ";
+  cout << "Mau masukkin berapa elemen array? : ";
   cin >> num;
 
   read(numbers, num);
 
-  cout << "Badhe nggoleki nopo? : ";
+  cout << "Ciee mau nyari angka berapa nich? : ";
   cin >> search;
 
   sequence(numbers, num, search, &found);
 
-  if (found == true)
+  if (found)
   {
-    cout << "Alhamdulillah, angka " << search << " saget ketemu\n";
+    cout << "Alhamdulillah, angka " << search << " ketemu!\n";
   }
   else
   {
-    cout << "Mboten pareng nangis nggih, angka " << search << " mboten saget ketemu\n";
+    cout << "Janji ga nangis! Angka " << search << " gabisa ketemu :(\n";
   }
 
-  // idk
+  // formality
   return 0;
 }
 
@@ -46,7 +46,7 @@ void read(array numbers, int num)
   // algorithm
   for (loop = 0; loop < num; loop++)
   {
-    cout << "Lebetken elemen array kaping-" << loop << ": ";
+    cout << "Masukkan elemen array yang ke-" << loop << ": ";
     cin >> numbers[loop];
   }
 }

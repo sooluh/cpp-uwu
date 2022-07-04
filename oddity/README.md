@@ -24,3 +24,6 @@
 
 8. [To Lowercase](./strtolower.cpp)<br>
    Convert string to lowercase, same as `strtolower()` function in PHP.
+
+9. [Cryptography](./crypto)<br>
+   An assignment from a computer organization course, but I added it to my exploration list, because it's cool!

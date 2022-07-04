@@ -2,6 +2,14 @@
 #include <string>
 using namespace std;
 
+// Diketik pada tanggal 2 Juli 2022
+// Hasil diskusi dari:
+// - Suluh Sulistiawan (Malam B '21)
+// - Muhammad Ridwan Wibisono (Malam A '21)
+// - Sri Hati Ardianti Putri (Malam B '21)
+// Tautan:
+// https://replit.com/@sProDev/Caesar-Cipher
+
 // fungsi untuk meng-enkripsi
 string encode(int p, int k)
 {
