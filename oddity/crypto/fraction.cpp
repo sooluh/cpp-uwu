@@ -2,13 +2,23 @@
 #include <string>
 using namespace std;
 
-// Diketik pada tanggal 2 Juli 2022
-// Hasil diskusi dari:
-// - Suluh Sulistiawan (Malam B '21)
-// - Muhammad Ridwan Wibisono (Malam A '21)
-// - Sri Hati Ardianti Putri (Malam B '21)
-// Tautan:
-// https://replit.com/@sProDev/Fraction-Cipher
+/**
+ * Diketik pada tanggal 2 Juli 2022
+ * Hasil diskusi dari:
+ * - Suluh Sulistiawan (Malam B '21) - Me!
+ * - Muhammad Ridwan Wibisono (Malam A '21)
+ * - Sri Hati Ardianti Putri (Malam B '21)
+ *
+ * Tautan:
+ * - https://replit.com/@sProDev/Fraction-Cipher
+ * - https://github.com/sooluh/cpp-uwu/blob/main/oddity/crypto/fraction.cpp
+ *
+ * Cipher lainnya:
+ * https://github.com/sooluh/cpp-uwu/blob/main/oddity/crypto
+ *
+ * Rumus enkripsi:
+ * x + 5 / x + 7
+ */
 
 // konstanta kunci
 const int k1 = 5;
