@@ -26,12 +26,14 @@ int main()
 
   if (index != -1)
   {
-    cout << "Waduh, elemen " << search << "udah ada di array!\n";
+    cout << "Waduh, elemen " << search << " udah ada di array! di index ke-" << index << "\n";
   }
   else
   {
-    num += 1;
+    cout << "Hehe, " << search << " belom ada di array, yaudah aku tambahin ke index " << num << "\n";
+
     numbers[num] = search;
+    num += 1;
   }
 
   // formality
@@ -54,12 +56,10 @@ void read(array numbers, int num)
 void sequence(array numbers, int num, int search, int *index)
 {
   // declaration
-  int loop;
-  bool found;
+  int loop = 0;
+  bool found = false;
 
   // algorithm
-  loop = 0;
-  found = false;
   while ((loop < num) && (!found))
   {
     if (numbers[loop] == search)
@@ -68,7 +68,7 @@ void sequence(array numbers, int num, int search, int *index)
     }
     else
     {
-      loop++;
+      loop += 1;
     }
   }
 

@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-  system("CLS");
+  system("cls"); // system("clear");
   // flush forces the printing to the screen before it clears
   cout << "Hello" << flush;
 
-  system("CLS");
+  system("cls"); // system("clear");
   cout << "Good-Bye" << endl;
 
   return 0;

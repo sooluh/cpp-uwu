@@ -5,13 +5,14 @@ const int MAX = 100;
 typedef int array[MAX];
 
 void read(array numbers, int num);
-void sequence(array numbers, int num, int search, int *index);
+void sequence(array numbers, int num, int search, bool *found);
 
 int main()
 {
   // declaration
   array numbers;
-  int num, search, index;
+  int num, search;
+  bool found;
 
   // algorithm
   cout << "Mau masukkin berapa elemen array? : ";
@@ -22,16 +23,15 @@ int main()
   cout << "Ciee mau nyari angka berapa nich? : ";
   cin >> search;
 
-  sequence(numbers, num, search, &index);
+  sequence(numbers, num, search, &found);
 
-  if (index != -1)
+  if (found)
   {
-    cout << "Waduh, elemen " << search << "udah ada di array!\n";
+    cout << "Alhamdulillah, angka " << search << " ketemu!\n";
   }
   else
   {
-    num += 1;
-    numbers[num] = search;
+    cout << "Janji ga nangis! Angka " << search << " gabisa ketemu :(\n";
   }
 
   // formality
@@ -46,38 +46,28 @@ void read(array numbers, int num)
   // algorithm
   for (loop = 0; loop < num; loop++)
   {
-    cout << "Masukkan elemen array yang ke-" << loop << ": ";
+    cout << "Masukkan elemen array index ke-" << loop << ": ";
     cin >> numbers[loop];
   }
 }
 
-void sequence(array numbers, int num, int search, int *index)
+void sequence(array numbers, int num, int search, bool *found)
 {
   // declaration
-  int loop;
-  bool found;
+  int loop = 0;
 
   // algorithm
-  loop = 0;
-  found = false;
-  while ((loop < num) && (!found))
+  while ((loop < num) && (numbers[loop] != search))
   {
-    if (numbers[loop] == search)
-    {
-      found = true;
-    }
-    else
-    {
-      loop++;
-    }
+    loop += 1;
   }
 
-  if (found)
+  if (numbers[loop] == search)
   {
-    *index = loop;
+    *found = true;
   }
   else
   {
-    *index = -1;
+    *found = false;
   }
 }

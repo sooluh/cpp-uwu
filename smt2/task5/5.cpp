@@ -5,7 +5,7 @@ const int MAX = 100;
 typedef int array[MAX];
 
 void read(array numbers, int num);
-void sequence(array numbers, int num, int search, int *index);
+void binary(array numbers, int num, int search, int *index);
 
 int main()
 {
@@ -22,16 +22,18 @@ int main()
   cout << "Ciee mau nyari angka berapa nich? : ";
   cin >> search;
 
-  sequence(numbers, num, search, &index);
+  binary(numbers, num, search, &index);
 
   if (index != -1)
   {
-    cout << "Waduh, elemen " << search << "udah ada di array!\n";
+    cout << "Waduh, elemen " << search << " udah ada di array! di index ke-" << index << "\n";
   }
   else
   {
-    num += 1;
+    cout << "Hehe, " << search << " belom ada di array, yaudah aku tambahin ke index " << num << "\n";
+
     numbers[num] = search;
+    num += 1;
   }
 
   // formality
@@ -51,30 +53,37 @@ void read(array numbers, int num)
   }
 }
 
-void sequence(array numbers, int num, int search, int *index)
+void binary(array numbers, int num, int search, int *index)
 {
   // declaration
-  int loop;
-  bool found;
+  int left, right, center;
+  bool found = false;
 
   // algorithm
-  loop = 0;
-  found = false;
-  while ((loop < num) && (!found))
+  left = 0;
+  right = num - 1;
+
+  while ((!found) && (left <= right))
   {
-    if (numbers[loop] == search)
+    center = (left + right) / 2;
+
+    if (numbers[center] == search)
     {
       found = true;
     }
+    else if (numbers[center] < search)
+    {
+      left = center + 1;
+    }
     else
     {
-      loop++;
+      right = center - 1;
     }
   }
 
   if (found)
   {
-    *index = loop;
+    *index = center;
   }
   else
   {
