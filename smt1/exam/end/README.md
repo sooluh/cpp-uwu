@@ -189,7 +189,7 @@ I have changed the code in the question (only the structure and neatness). The o
    berhenti jika diinputkan 999, kemudian hasilnya program akan menampilkan nilai terendah (min)
    dari sekumpulan data nilai yang telah diinputkan!
 
-# Answers
+## Answers
 
 1. Below is the answer!
    1. Error, karena pada baris ke-4 tidak terdapat titik koma, yang mengakibatkan compiler tidak dapat

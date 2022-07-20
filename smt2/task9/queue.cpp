@@ -7,7 +7,7 @@ struct Queue
   int values[MAX];
   int head = -1;
   int tail = -1;
-} queue;
+} queues;
 
 void pause();
 void init();
@@ -63,7 +63,7 @@ int main()
       }
 
       cout << "Antrian yang akan di hapus: ";
-      cout << queue.values[queue.head];
+      cout << queues.values[queues.head];
 
       dequeue();
       cout << "\n\n";
@@ -113,13 +113,13 @@ void pause()
 
 void init()
 {
-  queue.head = -1;
-  queue.tail = -1;
+  queues.head = -1;
+  queues.tail = -1;
 }
 
 bool isEmpty()
 {
-  if (queue.tail != -1)
+  if (queues.tail != -1)
   {
     return false;
   }
@@ -129,7 +129,7 @@ bool isEmpty()
 
 bool isFull()
 {
-  if (queue.tail != (MAX - 1))
+  if (queues.tail != (MAX - 1))
   {
     return false;
   }
@@ -141,24 +141,24 @@ void inqueue(int value)
 {
   if (isEmpty())
   {
-    queue.head = 0;
-    queue.tail = 0;
-    queue.values[queue.head] = value;
+    queues.head = 0;
+    queues.tail = 0;
+    queues.values[queues.head] = value;
 
     return;
   }
 
-  queue.tail += 1;
-  queue.values[queue.tail] = value;
+  queues.tail += 1;
+  queues.values[queues.tail] = value;
 }
 
 void dequeue()
 {
   int loop;
-  for (loop = queue.head; loop <= queue.tail; loop++)
+  for (loop = queues.head; loop <= queues.tail; loop++)
   {
-    queue.values[loop] = queue.values[loop + 1];
-    queue.tail--;
+    queues.values[loop] = queues.values[loop + 1];
+    queues.tail--;
   }
 }
 
@@ -172,8 +172,8 @@ void clear()
 
 void dump()
 {
-  for (int loop = queue.head; loop <= queue.tail; loop++)
+  for (int loop = queues.head; loop <= queues.tail; loop++)
   {
-    cout << "\n- " << queue.values[loop];
+    cout << "\n- " << queues.values[loop];
   }
 }
