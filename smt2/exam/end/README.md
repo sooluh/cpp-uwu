@@ -156,36 +156,8 @@
     5.  DeleteFirst, yaitu menghapus List pada bagian paling awal
     6.  DeleteLast, yaitu menghapus List pada bagian paling akhir
 5.  Rekursif adalah proses (sebuah fungsi) yang bisa memanggil (fungsi) dirinya
-    sendiri. Rekursif merupakan bentuk alternatif dari bentuk perulangan.
-
-    ```cpp
-    #include <iostream>
-    using namespace std;
-
-    int factorial(int x)
-    {
-      if (x == 1)
-      {
-        return 1;
-      }
-      else
-      {
-        return x * factorial(x - 1);
-      }
-    }
-
-    int main()
-    {
-      int x;
-
-      cout << "Masukkan angka: ";
-      cin >> x;
-
-      cout << x << "! = " << factorial(x);
-
-      return 0;
-    }
-    ```
+    sendiri. Rekursif merupakan bentuk alternatif dari bentuk perulangan.<br>
+    Check out the sample code [here](./recursive.cpp)!
 
 6.  ```cpp
     void deQueue()
@@ -235,3 +207,5 @@
           }
         }
         ```
+
+8.  You can see the code [here](./binary.cpp)
